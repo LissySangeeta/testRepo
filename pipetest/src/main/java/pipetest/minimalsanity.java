@@ -29,5 +29,18 @@ public class minimalsanity {
 		}
 		Assert.assertEquals("www.google.com", driver.getCurrentUrl());
 	}
+	
+	@SuppressWarnings("deprecation")
+	@Test
+	public void testgmailname()
+	{
+		try {
+			driver.wait(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Assert.assertEquals("www.gmail.com", driver.getCurrentUrl());
+	}
 
 }
